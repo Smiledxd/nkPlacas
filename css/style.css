@@ -587,31 +587,6 @@ button, input, select, textarea {
 .hero-slider__arrow--prev { left: 24px; }
 .hero-slider__arrow--next { right: 24px; }
 
-.hero-slider__dots {
-  position: absolute;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
-  z-index: 20;
-}
-
-.hero-slider__dot {
-  width: 12px;
-  height: 12px;
-  border-radius: var(--radius-full);
-  background-color: rgba(255, 255, 255, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-  transition: var(--transition-fast);
-}
-
-.hero-slider__dot--active {
-  width: 28px;
-  background-color: var(--color-primary-red);
-  border-color: var(--color-primary-red);
-}
 
 /* Botón Interactivo de Desplazamiento (Scroll Indicator con JS) */
 .hero-slider__scroll-btn {

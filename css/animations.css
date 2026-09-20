@@ -67,9 +67,6 @@
   animation: heroContentFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 1.2s both;
 }
 
-.hero-slider__dots {
-  animation: heroContentFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 1.3s both;
-}
 
 /* --------------------------------------------------------------------------
    3. REVELACIÓN POR SCROLL (BEM: .reveal, .reveal--up, .reveal--left, .reveal--right)
@@ -127,7 +124,6 @@
   .top-bar,
   .hero-slider__content,
   .hero-slider__arrow,
-  .hero-slider__dots,
   .reveal,
   .reveal--up,
   .reveal--left,

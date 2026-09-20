@@ -85,39 +85,19 @@ document.addEventListener('DOMContentLoaded', () => {
   // 3. CARRUSEL HERO DINÁMICO (BEM: .hero-slider, .hero-slider__slide, etc.)
   // =========================================================================
   const slides = document.querySelectorAll('.hero-slider__slide');
-  const dotsContainer = document.querySelector('.hero-slider__dots');
   const prevBtn = document.querySelector('.hero-slider__arrow--prev');
   const nextBtn = document.querySelector('.hero-slider__arrow--next');
+  const heroSlider = document.querySelector('.hero-slider');
 
   let currentSlide = 0;
   let slideInterval = null;
-  const SLIDE_DURATION = 7000;
-
-  if (slides.length > 0 && dotsContainer) {
-    dotsContainer.innerHTML = '';
-    slides.forEach((_, idx) => {
-      const dot = document.createElement('button');
-      dot.classList.add('hero-slider__dot');
-      if (idx === 0) dot.classList.add('hero-slider__dot--active');
-      dot.setAttribute('aria-label', `Diapositiva ${idx + 1}`);
-      dot.addEventListener('click', () => {
-        goToSlide(idx);
-        resetSlideTimer();
-      });
-      dotsContainer.appendChild(dot);
-    });
-  }
-
-  const dots = document.querySelectorAll('.hero-slider__dot');
+  const SLIDE_DURATION = 9000; // 9 segundos: ritmo pausado y legible en móviles y ordenadores
 
   function goToSlide(index) {
+    if (!slides.length) return;
     slides[currentSlide].classList.remove('hero-slider__slide--active');
-    if (dots[currentSlide]) dots[currentSlide].classList.remove('hero-slider__dot--active');
-
     currentSlide = (index + slides.length) % slides.length;
-
     slides[currentSlide].classList.add('hero-slider__slide--active');
-    if (dots[currentSlide]) dots[currentSlide].classList.add('hero-slider__dot--active');
   }
 
   function nextSlide() {
@@ -128,6 +108,26 @@ document.addEventListener('DOMContentLoaded', () => {
     goToSlide(currentSlide - 1);
   }
 
+  function stopSlideTimer() {
+    if (slideInterval !== null) {
+      clearInterval(slideInterval);
+      slideInterval = null;
+    }
+  }
+
+  function startSlideTimer() {
+    stopSlideTimer(); // Garantiza que jamás se acumulen múltiples intervalos
+    if (slides.length > 1) {
+      slideInterval = setInterval(nextSlide, SLIDE_DURATION);
+    }
+  }
+
+  function resetSlideTimer() {
+    stopSlideTimer();
+    startSlideTimer();
+  }
+
+  // Controles de flechas de navegación
   if (nextBtn) {
     nextBtn.addEventListener('click', () => {
       nextSlide();
@@ -142,27 +142,48 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  function startSlideTimer() {
-    if (slides.length > 1) {
-      slideInterval = setInterval(nextSlide, SLIDE_DURATION);
-    }
-  }
-
-  function resetSlideTimer() {
-    clearInterval(slideInterval);
-    startSlideTimer();
-  }
-
-  const heroSlider = document.querySelector('.hero-slider');
+  // Control táctil e interactivo
   if (heroSlider) {
-    heroSlider.addEventListener('mouseenter', () => clearInterval(slideInterval));
+    // Pausa en escritorio al posar el cursor
+    heroSlider.addEventListener('mouseenter', stopSlideTimer);
     heroSlider.addEventListener('mouseleave', startSlideTimer);
+
+    // Pausa y soporte gestual en móviles (Swipe / Deslizar)
+    let touchStartX = 0;
+
+    heroSlider.addEventListener('touchstart', (e) => {
+      stopSlideTimer(); // Pausa mientras el usuario lee o toca en celular
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    heroSlider.addEventListener('touchend', (e) => {
+      const touchEndX = e.changedTouches[0].screenX;
+      const swipeDistance = touchEndX - touchStartX;
+
+      // Deslizar con el dedo en celular (mínimo 45px de recorrido)
+      if (Math.abs(swipeDistance) > 45) {
+        if (swipeDistance < 0) {
+          nextSlide();
+        } else {
+          prevSlide();
+        }
+      }
+
+      startSlideTimer(); // Reanuda tras levantar el dedo
+    }, { passive: true });
   }
 
-  // Retardo de 1 segundo en el arranque para sincronizar con la animación visual de entrada
-  setTimeout(() => {
-    startSlideTimer();
-  }, 1000);
+  // Pausar si la pestaña pasa a segundo plano o el celular se apaga/bloquea
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      stopSlideTimer();
+    } else {
+      startSlideTimer();
+    }
+  });
+
+  // Inicio seguro del carrusel
+  startSlideTimer();
 
   // =========================================================================
   // 3.1 BOTÓN INTERACTIVO DE SCROLL DEL HERO (Flecha hacia abajo)

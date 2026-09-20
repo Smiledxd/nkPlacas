@@ -55,6 +55,10 @@
 html {
   scroll-behavior: smooth;
   font-size: 17px;
+  overflow-x: hidden;
+  overflow-x: clip;
+  max-width: 100%;
+  width: 100%;
 }
 
 body {
@@ -63,6 +67,10 @@ body {
   background-color: var(--color-white);
   line-height: 1.6;
   overflow-x: hidden;
+  overflow-x: clip;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1654,12 +1662,15 @@ button, input, select, textarea {
   color: var(--color-white);
   border-radius: var(--radius-full);
   font-size: 2.2rem;
-  transition: var(--transition-fast);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+  transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .whatsapp-btn:hover {
   background-color: var(--color-whatsapp-hover);
-  transform: translateY(-3px);
+  transform: translateY(-3px) translateZ(0);
   color: var(--color-white);
 }
 

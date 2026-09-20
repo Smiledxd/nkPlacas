@@ -358,11 +358,18 @@
   }
 
   .whatsapp-btn {
-    bottom: 20px;
-    right: 20px;
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
     width: 52px;
     height: 52px;
     font-size: 1.9rem;
+    z-index: 1500 !important;
+    transform: translateZ(0) !important;
+  }
+
+  .whatsapp-btn__tooltip {
+    display: none !important;
   }
 
 

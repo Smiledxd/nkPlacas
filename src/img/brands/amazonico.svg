@@ -1,0 +1,8 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" fill="none">
+  <g transform="translate(10, 10)">
+    <path d="M16 4 C6 13 3 23 5 33 C11 37 22 37 28 29 C32 21 28 9 16 4 Z" fill="#16A34A"/>
+    <path d="M16 4 C22 13 24 23 18 33" stroke="#DCFCE7" stroke-width="2" stroke-linecap="round"/>
+    <text x="36" y="28" font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="21" fill="#14532D" letter-spacing="1.5">AMAZÓNICO</text>
+    <text x="38" y="41" font-family="'Montserrat', sans-serif" font-weight="700" font-size="8.5" fill="#16A34A" letter-spacing="3">TABLEROS PREMIUM</text>
+  </g>
+</svg>

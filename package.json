@@ -1,0 +1,27 @@
+{
+  "name": "nkPlacas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "servor src/ index.html 1234 --reload",
+    "build": "echo Comando Reservado",
+    "deploy": "gh-pages -d src/",
+    "lint": "echo Comando Reservado",
+    "format": "echo Comando Reservado"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.3.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

@@ -1,0 +1,462 @@
+/* ==========================================================================
+   NK PLACAS E.I.R.L. — Responsive Stylesheet (responsive.css)
+   Metodología: BEM (Block Element Modifier)
+   ========================================================================== */
+
+/* Pantallas Extra Grandes (Menor a 1440px) */
+@media (max-width: 1440px) {
+  .hero-slider__title {
+    font-size: 3rem;
+  }
+}
+
+/* Pantallas Grandes y Laptops (Menor a 1200px) */
+@media (max-width: 1200px) {
+  .hero-slider {
+    height: 600px;
+    max-height: 70vh;
+  }
+
+  .hero-slider__title {
+    font-size: 2.7rem;
+  }
+  
+  .services__grid {
+    gap: 22px;
+  }
+  
+  .footer__top {
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 30px;
+  }
+
+  .cta-banner__grid {
+    grid-template-columns: 380px 1fr;
+    gap: 40px;
+  }
+}
+
+/* Tablets en Orientación Horizontal (Menor a 992px) */
+@media (max-width: 992px) {
+  .hero-slider {
+    height: 560px;
+    max-height: 68vh;
+  }
+
+  .hero-slider__title {
+    font-size: 2.3rem;
+  }
+
+  .hero-slider__script {
+    font-size: 1.5rem;
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about__media {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .workshop__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .special-cuts__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .cut-card__media {
+    height: 280px;
+  }
+
+  .special-cuts__custom-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .special-cuts__custom-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .special-cuts__custom-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .brands__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .cta-banner__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .quote-card {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .cta-banner__content {
+    text-align: center;
+  }
+
+  .cta-banner__list {
+    justify-content: center;
+  }
+
+  .pre-footer__wrap {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .pre-footer__title {
+    text-align: center;
+  }
+
+  .footer__top {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  /* Menú Móvil / Tablet */
+  .header__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-white);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 24px;
+    gap: 0;
+    border-bottom: 2px solid var(--color-primary-red);
+    border-top: 1px solid var(--color-gray-border);
+    transform: translateY(-150%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 999;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  .header__nav--active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header__link {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 13px 4px;
+    border-bottom: 1px solid var(--color-gray-subtle);
+    display: block;
+  }
+
+  .header__link::after {
+    display: none;
+  }
+
+  .header__actions .btn {
+    display: none;
+  }
+}
+
+/* Tablets Verticales y Smartphones Grandes (Menor a 768px) */
+@media (max-width: 768px) {
+  .top-bar {
+    display: none;
+  }
+
+  .hero-slider {
+    height: 520px;
+    max-height: 68vh;
+  }
+
+  .hero-slider__dots {
+    bottom: 50px;
+  }
+
+  .hero-slider__scroll-btn {
+    bottom: 12px;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+  }
+
+  .hero-slider__scroll-icon {
+    font-size: 1.35rem;
+  }
+
+  .hero-slider__title {
+    font-size: 1.95rem;
+    line-height: 1.2;
+  }
+
+  .hero-slider__script {
+    font-size: 1.3rem;
+  }
+
+  .hero-slider__desc {
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+
+  .hero-slider__action {
+    width: 100%;
+  }
+
+  .hero-slider__action .btn {
+    width: 100%;
+    padding: 14px 20px;
+  }
+
+  .hero-slider__arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+
+  .hero-slider__arrow--prev { left: 10px; }
+  .hero-slider__arrow--next { right: 10px; }
+
+  .section-header__title,
+  .about__title {
+    font-size: 1.8rem;
+  }
+
+  .section-header__desc {
+    font-size: 0.95rem;
+  }
+
+  .special-cuts {
+    padding: 60px 0 70px;
+  }
+
+  .special-cuts__grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .cut-card__media {
+    height: 320px;
+  }
+
+  .special-cuts__custom-banner {
+    padding: 22px 18px;
+  }
+
+  .special-cuts__custom-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .brands {
+    padding: 55px 0 65px;
+  }
+
+  .brands__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+
+  .brand-card {
+    padding: 18px 12px 14px;
+  }
+
+  .brand-card__logo-wrapper {
+    height: 46px;
+    margin-bottom: 10px;
+  }
+
+  .brand-card__logo {
+    max-height: 40px;
+    max-width: 120px;
+  }
+
+  .workshop {
+    padding: 70px 0;
+  }
+
+  .workshop__heading {
+    font-size: 1.6rem;
+  }
+
+
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-banner__content h2 {
+    font-size: 1.9rem;
+  }
+
+  .cta-banner__script {
+    font-size: 1.3rem;
+  }
+
+  .pre-footer__title {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+
+  .pre-footer__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .pre-footer__actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .footer__bottom-container {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .whatsapp-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    font-size: 1.9rem;
+  }
+
+
+  .about__map-wrapper {
+    height: 360px;
+  }
+}
+
+/* Teléfonos Pequeños (Menor a 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero-slider {
+    height: 480px;
+    max-height: 66vh;
+  }
+
+  .hero-slider__title {
+    font-size: 1.65rem;
+  }
+
+  .special-cuts__item {
+    height: 300px;
+    padding: 14px;
+  }
+
+  .special-cuts__cta .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .brands__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .brands__grid .brand-card:last-child {
+    grid-column: span 2;
+    max-width: 220px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .brand-card {
+    padding: 14px 8px 12px;
+  }
+
+  .brand-card__logo-wrapper {
+    height: 38px;
+    margin-bottom: 8px;
+  }
+
+  .brand-card__logo {
+    max-height: 34px;
+    max-width: 100px;
+  }
+
+  .brand-card__badge {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+  }
+
+
+  .workshop__action {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .workshop__action .btn {
+    width: 100%;
+  }
+
+  .about__map-wrapper {
+    height: 320px;
+  }
+
+  .about__map-badge {
+    position: static;
+    margin-top: 10px;
+    padding: 12px 14px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .about__map-btn {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .quote-card {
+    padding: 26px 18px;
+  }
+
+  .quote-card__title {
+    font-size: 1.5rem;
+  }
+
+  .quote-card__btn {
+    font-size: 1.05rem;
+    padding: 12px;
+  }
+}

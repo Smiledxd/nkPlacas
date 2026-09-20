@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Libro de Reclamaciones Virtual de NK PLACAS E.I.R.L. Formato Oficial conforme al Código de Protección y Defensa del Consumidor - Ley N° 29571 / D.S. N° 011-2011-PCM / INDECOPI.">
+  <meta name="author" content="NK PLACAS E.I.R.L.">
+  
+  <!-- Metaetiquetas de Seguridad y Protección Anti-Ataques -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+  
+  <title>Libro de Reclamaciones Virtual | NK PLACAS E.I.R.L.</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/logo/favicon.png">
+  
+  <!-- Optimización de Recursos (Performance Preconnect & Preload) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://unpkg.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="preload" as="image" href="img/logo/logo.png" fetchpriority="high">
+  
+  <!-- Google Fonts: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  
+  <!-- Boxicons v2.1.4 (Sin emojis) -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  
+  <!-- SweetAlert2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <!-- Hojas de Estilos (Metodología BEM) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/reclamaciones.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="claim-page">
+
+  <!-- ========================================================================
+       BARRA SUPERIOR (.top-bar)
+       ======================================================================== -->
+  <div class="top-bar">
+    <div class="container top-bar__container">
+      <div class="top-bar__info">
+        <div class="top-bar__item">
+          <i class='bx bx-phone-call'></i>
+          <a href="tel:+51944491189" class="top-bar__link">Llamar: 944 491 189</a>
+        </div>
+        <div class="top-bar__item">
+          <i class='bx bxl-whatsapp'></i>
+          <a href="https://wa.me/51944491189" class="top-bar__link" target="_blank" rel="noopener noreferrer">WhatsApp: 944 491 189</a>
+        </div>
+        <div class="top-bar__item">
+          <i class='bx bx-map-pin'></i>
+          <span>Av. Nicolás de Piérola 301, VMT (A pasos del Palacio de la Juventud)</span>
+        </div>
+        <div class="top-bar__item">
+          <i class='bx bx-envelope'></i>
+          <a href="mailto:nknkventas@gmail.com" class="top-bar__link">nknkventas@gmail.com</a>
+        </div>
+      </div>
+      <div class="top-bar__social">
+        <a href="https://facebook.com" class="top-bar__social-link" target="_blank" rel="noopener noreferrer nofollow" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+        <a href="https://instagram.com" class="top-bar__social-link" target="_blank" rel="noopener noreferrer nofollow" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+        <a href="https://tiktok.com" class="top-bar__social-link" target="_blank" rel="noopener noreferrer nofollow" aria-label="TikTok"><i class='bx bxl-tiktok'></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       CABECERA Y NAVEGACIÓN (.header)
+       ======================================================================== -->
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="header__logo-wrap">
+        <img src="img/logo/logo.png" alt="NK PLACAS E.I.R.L. Logo" class="header__logo" width="220" height="52" fetchpriority="high" decoding="async">
+      </a>
+      
+      <nav class="header__nav">
+        <a href="index.html#inicio" class="header__link">Inicio</a>
+        <a href="index.html#cortes-especiales" class="header__link">Cortes Especiales</a>
+        <a href="index.html#taller" class="header__link">Taller</a>
+        <a href="index.html#servicios" class="header__link">Servicios</a>
+        <a href="index.html#marcas" class="header__link">Marcas</a>
+        <a href="index.html#nosotros" class="header__link">Nosotros</a>
+        <a href="index.html#contacto" class="header__link">Contacto</a>
+      </nav>
+      
+      <div class="header__actions">
+        <a href="tel:+51944491189" class="btn btn--outline header__btn-call" title="Llamar directamente al taller">
+          <i class='bx bx-phone-call'></i>
+          <span>Llamar</span>
+        </a>
+        <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20solicitar%20una%20cotizaci%C3%B3n" class="btn btn--primary header__btn" target="_blank" rel="noopener noreferrer">
+          <i class='bx bxl-whatsapp'></i>
+          <span>WhatsApp</span>
+        </a>
+        <button class="header__toggle" aria-label="Abrir Menú de Navegación">
+          <i class='bx bx-menu'></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       CONTENIDO PRINCIPAL: LIBRO DE RECLAMACIONES (.claim-page__wrap)
+       FORMATO OFICIAL SEGÚN INDECOPI (D.S. N° 011-2011-PCM)
+       ======================================================================== -->
+  <main class="claim-page__wrap">
+    <div class="claim-page__container">
+
+      <!-- Ficha de Presentación e Imagen Oficial del Libro -->
+      <div class="claim-intro reveal--up">
+        <div class="claim-intro__info">
+          <h1>LIBRO DE <span style="color: var(--color-primary-red);">RECLAMACIONES VIRTUAL</span></h1>
+          <p>Conforme al Código de Protección y Defensa del Consumidor (Ley N° 29571) y el D.S. N° 011-2011-PCM reglamentado por el INDECOPI.</p>
+        </div>
+        <div class="claim-intro__badge">
+          <img src="img/badges/libro_reclamaciones.jpg" alt="Libro de Reclamaciones Oficial - NK PLACAS E.I.R.L." class="claim-intro__img" width="115" height="163" fetchpriority="high" decoding="async">
+        </div>
+      </div>
+
+      <!-- FORMULARIO OFICIAL EN FORMATO TABULAR INDECOPI -->
+      <form id="reclamacionesForm" novalidate>
+        
+        <div class="indecopi-sheet reveal--up">
+
+          <!-- ENCABEZADO OFICIAL -->
+          <div class="indecopi-sheet__row indecopi-sheet__row--header">
+            <div class="indecopi-sheet__col-title-main">
+              <h2>LIBRO DE RECLAMACIONES</h2>
+            </div>
+            <div class="indecopi-sheet__col-title-sub">
+              <h2>HOJA DE RECLAMACIÓN</h2>
+            </div>
+          </div>
+
+          <!-- FILA FECHA Y NÚMERO -->
+          <div class="indecopi-sheet__row">
+            <div class="indecopi-sheet__cell-date">
+              <span class="indecopi-sheet__label">FECHA:</span>
+              <div class="indecopi-sheet__date-boxes">
+                <span class="indecopi-sheet__date-slot" id="claimDateDay">04</span>
+                <span class="indecopi-sheet__date-sep">/</span>
+                <span class="indecopi-sheet__date-slot" id="claimDateMonth">09</span>
+                <span class="indecopi-sheet__date-sep">/</span>
+                <span class="indecopi-sheet__date-slot indecopi-sheet__date-slot--year" id="claimDateYear">2026</span>
+              </div>
+              <input type="hidden" name="fecha_reclamacion" id="claimDateHidden">
+            </div>
+            <div class="indecopi-sheet__cell-num">
+              <span class="indecopi-sheet__label" style="border:none;">N°</span>
+              <span class="indecopi-sheet__num-val" id="claimSheetNum">000001 - 2026</span>
+              <input type="hidden" name="numero_hoja_reclamacion" id="claimSheetNumHidden" value="000001 - 2026">
+            </div>
+          </div>
+
+          <!-- DATOS DEL PROVEEDOR -->
+          <div class="indecopi-sheet__row">
+            <div class="indecopi-sheet__vendor-info">
+              <p><strong>[NOMBRE DE LA PERSONA NATURAL O RAZÓN SOCIAL DE LA PERSONA JURÍDICA]:</strong> NK PLACAS E.I.R.L.</p>
+              <p><strong>[DOMICILIO DEL ESTABLECIMIENTO COMERCIAL O DIRECCIÓN DEL PROVEEDOR]:</strong> Av. Nicolás de Piérola Nro. 301, Urb. El Cercado, Villa María del Triunfo, Lima - Perú &nbsp;|&nbsp; <strong>RUC:</strong> 20616192141</p>
+            </div>
+          </div>
+
+          <!-- 1. IDENTIFICACIÓN DEL CONSUMIDOR RECLAMANTE -->
+          <div class="indecopi-sheet__section-bar">
+            <h3>1. IDENTIFICACIÓN DEL CONSUMIDOR RECLAMANTE</h3>
+          </div>
+
+          <div class="indecopi-sheet__row">
+            <div class="indecopi-sheet__cell-field">
+              <label for="claimName" class="indecopi-sheet__label">NOMBRE:</label>
+              <input type="text" id="claimName" name="nombre_consumidor" class="indecopi-sheet__input" placeholder="Nombre completo o razón social del reclamante" required>
+            </div>
+          </div>
+
+          <div class="indecopi-sheet__row">
+            <div class="indecopi-sheet__cell-field">
+              <label for="claimAddress" class="indecopi-sheet__label">DOMICILIO:</label>
+              <input type="text" id="claimAddress" name="domicilio_consumidor" class="indecopi-sheet__input" placeholder="Dirección completa del reclamante (Av./Calle, Nro., Distrito, Ciudad)" required>
+            </div>
+          </div>
+
+          <div class="indecopi-sheet__row indecopi-sheet__row--split">
+            <div class="indecopi-sheet__cell-half">
+              <label for="claimDocNum" class="indecopi-sheet__label">DNI / CE:</label>
+              <input type="text" id="claimDocNum" name="dni_ce_consumidor" class="indecopi-sheet__input" placeholder="N° Documento de Identidad (DNI/CE/RUC)" required>
+            </div>
+            <div class="indecopi-sheet__cell-half">
+              <label for="claimPhone" class="indecopi-sheet__label">TELÉFONO:</label>
+              <input type="tel" id="claimPhone" name="telefono_consumidor" class="indecopi-sheet__input" placeholder="Teléfono / Celular de contacto" required>
+            </div>
+          </div>
+
+          <div class="indecopi-sheet__row">
+            <div class="indecopi-sheet__cell-field">
+              <label for="claimEmail" class="indecopi-sheet__label">E-MAIL:</label>
+              <input type="email" id="claimEmail" name="email_consumidor" class="indecopi-sheet__input" placeholder="correo@ejemplo.com (Para el envío formal de la respuesta en 15 días hábiles)" required>
+            </div>
+          </div>
+
+          <div class="indecopi-sheet__row">
+            <div class="indecopi-sheet__cell-field">
+              <label for="claimParent" class="indecopi-sheet__label indecopi-sheet__label--long">PADRE O MADRE:<br><span style="font-size:0.68rem;font-weight:normal;color:#555;">(cuando el consumidor sea menor de edad)</span></label>
+              <input type="text" id="claimParent" name="padre_madre_tutor" class="indecopi-sheet__input" placeholder="Nombre completo del apoderado o representante legal (si aplica)">
+            </div>
+          </div>
+
+          <!-- 2. IDENTIFICACIÓN DEL BIEN CONTRATADO -->
+          <div class="indecopi-sheet__section-bar">
+            <h3>2. IDENTIFICACIÓN DEL BIEN CONTRATADO</h3>
+          </div>
+
+          <div class="indecopi-sheet__grid-good">
+            <div class="indecopi-sheet__cell-good-choice">
+              <label class="indecopi-sheet__choice-row" for="goodProducto">
+                <span class="indecopi-sheet__label">PRODUCTO</span>
+                <input type="radio" id="goodProducto" name="tipo_bien" value="PRODUCTO" class="indecopi-sheet__radio" checked>
+              </label>
+              <label class="indecopi-sheet__choice-row" for="goodServicio">
+                <span class="indecopi-sheet__label">SERVICIO</span>
+                <input type="radio" id="goodServicio" name="tipo_bien" value="SERVICIO" class="indecopi-sheet__radio">
+              </label>
+            </div>
+            <div class="indecopi-sheet__cell-good-details">
+              <div class="indecopi-sheet__cell-amount">
+                <label for="claimAmount" class="indecopi-sheet__label">MONTO RECLAMADO:</label>
+                <span style="padding-left:10px; font-weight:bold; font-size:0.88rem;">S/.</span>
+                <input type="number" step="0.01" id="claimAmount" name="monto_reclamado" class="indecopi-sheet__input" placeholder="0.00">
+              </div>
+              <div class="indecopi-sheet__cell-desc">
+                <label for="claimGoodDesc" class="indecopi-sheet__label">DESCRIPCIÓN:</label>
+                <textarea id="claimGoodDesc" name="descripcion_bien" class="indecopi-sheet__textarea indecopi-sheet__textarea--short" placeholder="Indique el tablero (color, espesor), servicio de corte o comprobante..." required></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. DETALLE DE LA RECLAMACIÓN Y PEDIDO DEL CONSUMIDOR -->
+          <div class="indecopi-sheet__section-bar indecopi-sheet__section-bar--split">
+            <div class="indecopi-sheet__section-title">
+              <h3>3. DETALLE DE LA RECLAMACIÓN Y PEDIDO DEL CONSUMIDOR</h3>
+            </div>
+            <div class="indecopi-sheet__claim-types">
+              <label class="indecopi-sheet__type-label" for="typeReclamo">
+                <span>RECLAMO¹</span>
+                <input type="radio" id="typeReclamo" name="tipo_reclamacion" value="RECLAMO" class="indecopi-sheet__radio" checked>
+              </label>
+              <label class="indecopi-sheet__type-label" for="typeQueja">
+                <span>QUEJA²</span>
+                <input type="radio" id="typeQueja" name="tipo_reclamacion" value="QUEJA" class="indecopi-sheet__radio">
+              </label>
+            </div>
+          </div>
+
+          <div class="indecopi-sheet__row">
+            <div class="indecopi-sheet__cell-detail">
+              <label for="claimDetail" class="indecopi-sheet__label">DETALLE:</label>
+              <textarea id="claimDetail" name="detalle_reclamacion" class="indecopi-sheet__textarea" rows="4" placeholder="Explique con claridad los hechos o disconformidad..." required></textarea>
+            </div>
+          </div>
+
+          <div class="indecopi-sheet__grid-request-sign">
+            <div class="indecopi-sheet__cell-request">
+              <label for="claimRequest" class="indecopi-sheet__label">PEDIDO:</label>
+              <textarea id="claimRequest" name="pedido_consumidor" class="indecopi-sheet__textarea" rows="4" placeholder="Indique de forma concreta su requerimiento o solución solicitada..." required></textarea>
+            </div>
+            <div class="indecopi-sheet__cell-signature">
+              <div class="indecopi-sheet__sign-box">
+                <div class="indecopi-sheet__sign-area">
+                  <label class="indecopi-sheet__sign-check" for="signConsent">
+                    <input type="checkbox" id="signConsent" class="indecopi-sheet__checkbox" required checked>
+                    <span>Firma Digital Conforme / Declaro Veracidad de Datos</span>
+                  </label>
+                  <span class="indecopi-sheet__sign-line"></span>
+                  <span class="indecopi-sheet__sign-caption">FIRMA DEL CONSUMIDOR</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. OBSERVACIONES Y ACCIONES ADOPTADAS POR EL PROVEEDOR -->
+          <div class="indecopi-sheet__section-bar">
+            <h3>4. OBSERVACIONES Y ACCIONES ADOPTADAS POR EL PROVEEDOR</h3>
+          </div>
+
+          <div class="indecopi-sheet__grid-provider-sign">
+            <div class="indecopi-sheet__cell-provider-action">
+              <div class="indecopi-sheet__provider-response-meta">
+                <span class="indecopi-sheet__label">FECHA DE RESPUESTA:</span>
+                <span class="indecopi-sheet__provider-deadline">Plazo máximo legal: quince (15) días hábiles improrrogables</span>
+              </div>
+              <div class="indecopi-sheet__provider-reserved">
+                (Espacio reservado para ser completado por NK PLACAS E.I.R.L. al emitir la respuesta formal por correo electrónico dentro del plazo normativo legal de 15 días hábiles).
+              </div>
+            </div>
+            <div class="indecopi-sheet__cell-provider-sign">
+              <div class="indecopi-sheet__sign-box">
+                <div class="indecopi-sheet__seal">
+                  <span class="indecopi-sheet__seal-company">NK PLACAS E.I.R.L.</span>
+                  <span class="indecopi-sheet__seal-ruc">RUC: 20616192141</span>
+                  <span class="indecopi-sheet__seal-dept">Atención al Cliente y Postventa</span>
+                </div>
+                <span class="indecopi-sheet__sign-line"></span>
+                <span class="indecopi-sheet__sign-caption">FIRMA DEL PROVEEDOR</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PIE DE PÁGINA OFICIAL INDECOPI: DEFINICIONES Y NOTAS -->
+          <div class="indecopi-sheet__definitions">
+            <div class="indecopi-sheet__def-box">
+              <strong>¹ RECLAMO:</strong> Disconformidad relacionada a los productos o servicios.
+            </div>
+            <div class="indecopi-sheet__def-box">
+              <strong>² QUEJA:</strong> Disconformidad no relacionada a los productos o servicios; o, malestar o descontento respecto a la atención al público.
+            </div>
+          </div>
+
+          <div class="indecopi-sheet__footer-legal">
+            <div class="indecopi-sheet__footer-title">HOJA DE RECLAMACIÓN VIRTUAL</div>
+            <p>* La formulación del reclamo no impide acudir a otras vías de solución de controversias ni es condición previa para interponer una denuncia ante el INDECOPI.</p>
+            <p>* El proveedor deberá dar respuesta al reclamo o queja en un plazo no mayor a quince (15) días hábiles improrrogables según la normativa vigente.</p>
+          </div>
+
+        </div>
+
+        <!-- ACCIONES LEGALES Y BOTÓN DE ENVÍO -->
+        <div class="claim-web-actions reveal--up">
+          <label class="claim-web-actions__consent" for="acceptTerms">
+            <input type="checkbox" id="acceptTerms" class="claim-web-actions__checkbox" required checked>
+            <span>Declaro bajo juramento que los datos e información consignados en la presente Hoja de Reclamación son verdaderos y se ajustan a la realidad.</span>
+          </label>
+
+          <label class="claim-web-actions__consent" for="acceptData">
+            <input type="checkbox" id="acceptData" class="claim-web-actions__checkbox" required checked>
+            <span>Autorizo a <strong>NK PLACAS E.I.R.L.</strong> el tratamiento de mis datos personales consignados exclusivamente para la resolución y respuesta del presente reclamo o queja, de conformidad con la Ley N° 29733 (Ley de Protección de Datos Personales).</span>
+          </label>
+
+          <div class="claim-web-actions__buttons">
+            <button type="submit" class="btn btn--primary claim-web-actions__submit" id="btnSubmitClaim">
+              <i class='bx bx-paper-plane'></i>
+              <span>Registrar y Enviar Reclamación</span>
+            </button>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       PIE DE PÁGINA (.footer)
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer__top">
+        
+        <!-- Columna 1: Marca y Datos Fiscales -->
+        <div class="footer__brand">
+          <img src="img/logo/logo.png" alt="NK PLACAS E.I.R.L." class="footer__logo" width="200" height="52" loading="lazy" decoding="async">
+          <p class="footer__desc">
+            Venta mayorista y minorista de tableros de melamina, cortes especiales de precisión, enchapado de cantos, ranurado y optimización para la industria del mueble en Lima.
+          </p>
+          <div class="footer__fiscal">
+            <strong>Razón Social: NK PLACAS E.I.R.L.</strong>
+            <span>RUC: 20616192141</span><br>
+            <span>Estado: ACTIVO / Condición: HABIDO</span>
+          </div>
+        </div>
+
+        <!-- Columna 2: Enlaces de Navegación -->
+        <div class="footer__col">
+          <h4 class="footer__title">Explorar</h4>
+          <ul class="footer__links">
+            <li><a href="index.html#inicio" class="footer__link"><i class='bx bx-chevron-right'></i> Inicio</a></li>
+            <li><a href="index.html#cortes-especiales" class="footer__link"><i class='bx bx-chevron-right'></i> Cortes Especiales CNC</a></li>
+            <li><a href="index.html#taller" class="footer__link"><i class='bx bx-chevron-right'></i> Taller y Maquinaria</a></li>
+            <li><a href="index.html#servicios" class="footer__link"><i class='bx bx-chevron-right'></i> Servicios</a></li>
+            <li><a href="index.html#marcas" class="footer__link"><i class='bx bx-chevron-right'></i> Marcas Oficiales</a></li>
+            <li><a href="index.html#nosotros" class="footer__link"><i class='bx bx-chevron-right'></i> Quiénes Somos</a></li>
+            <li><a href="libro_de_reclamaciones.html" class="footer__link"><i class='bx bx-chevron-right'></i> Libro de Reclamaciones</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Servicios -->
+        <div class="footer__col">
+          <h4 class="footer__title">Servicios</h4>
+          <ul class="footer__links">
+            <li><a href="index.html#servicios" class="footer__link"><i class='bx bx-chevron-right'></i> Cortes Especiales CNC</a></li>
+            <li><a href="index.html#servicios" class="footer__link"><i class='bx bx-chevron-right'></i> Enchapado de Canto (Tapacanto)</a></li>
+            <li><a href="index.html#servicios" class="footer__link"><i class='bx bx-chevron-right'></i> Corte Lineal en Escuadra</a></li>
+            <li><a href="index.html#servicios" class="footer__link"><i class='bx bx-chevron-right'></i> Ranurado de Fondos</a></li>
+            <li><a href="index.html#servicios" class="footer__link"><i class='bx bx-chevron-right'></i> Perforación para Bisagras</a></li>
+            <li><a href="index.html#servicios" class="footer__link"><i class='bx bx-chevron-right'></i> Optimización de Despiece</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Contacto y Libro de Reclamaciones -->
+        <div class="footer__col">
+          <h4 class="footer__title">Contacto</h4>
+          <ul class="footer__contacts">
+            <li>
+              <i class='bx bx-map-pin'></i>
+              <span>Av. Nicolás de Piérola Nro. 301, Urb. El Cercado (A pasos del Palacio de la Juventud), Villa María del Triunfo, Lima - Perú</span>
+            </li>
+            <li>
+              <i class='bx bx-phone'></i>
+              <a href="tel:+51944491189">944 491 189</a>
+            </li>
+            <li>
+              <i class='bx bxl-whatsapp'></i>
+              <a href="https://wa.me/51944491189" target="_blank" rel="noopener noreferrer">WhatsApp: 944 491 189</a>
+            </li>
+            <li>
+              <i class='bx bx-envelope'></i>
+              <a href="mailto:nknkventas@gmail.com">nknkventas@gmail.com</a>
+            </li>
+            <li>
+              <i class='bx bx-time'></i>
+              <span>Lunes a Sábado: 8:00 am - 6:00 pm</span>
+            </li>
+          </ul>
+
+          <div class="footer__badge-wrap">
+            <a href="libro_de_reclamaciones.html" class="footer__badge-link" title="Libro de Reclamaciones Virtual conforme a INDECOPI">
+              <img src="img/badges/libro_reclamaciones.jpg" alt="Libro de Reclamaciones - NK PLACAS EIRL" class="footer__badge-img" width="130" height="184" loading="lazy" decoding="async">
+            </a>
+            <span class="footer__badge-note">Conforme a la Ley N° 29571 / INDECOPI</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra de Copyright Inferior -->
+      <div class="footer__bottom">
+        <div class="footer__bottom-container">
+          <p class="footer__copyright">© 2026 NK PLACAS E.I.R.L. — RUC 20616192141. Todos los derechos reservados.</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20hacer%20una%20consulta" 
+     class="whatsapp-btn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Contactar por WhatsApp">
+    <i class='bx bxl-whatsapp'></i>
+    <span class="whatsapp-btn__tooltip">¡Escríbenos por WhatsApp!</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/reclamaciones.js" defer></script>
+</body>
+</html>

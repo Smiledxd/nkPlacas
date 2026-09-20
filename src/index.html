@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NK PLACAS E.I.R.L. - Taller de enchapado de tapacanto (delgado y grueso) y corte dimensionado de tableros de melamina con maquinaria industrial en Lima, Perú.">
+  <meta name="keywords" content="enchapado de cantos, tapacanto, canteado, corte dimensionado, melamina, servicio de corte, taller de carpinteria, villa maria del triunfo, lima">
+  <meta name="author" content="NK PLACAS E.I.R.L.">
+  
+  <!-- Metaetiquetas de Seguridad y Protección Anti-Ataques -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+  
+  <title>NK PLACAS E.I.R.L. | Taller de Enchapado de Tapacanto y Corte de Melamina</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/logo/favicon.png">
+  
+  <!-- Optimización de Recursos (Performance Preconnect & Preload LCP) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://unpkg.com">
+  <link rel="preload" as="image" href="img/logo/logo.png" fetchpriority="high">
+  <link rel="preload" as="image" href="img/hero/hero_cnc.jpg" fetchpriority="high">
+  
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <!-- Boxicons v2.1.4 (Sin emojis) -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  
+  <!-- Hojas de Estilos (Metodología BEM) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. BLOQUE: BARRA SUPERIOR (.top-bar)
+       ======================================================================== -->
+  <div class="top-bar">
+    <div class="container top-bar__container">
+      <div class="top-bar__info">
+        <div class="top-bar__item">
+          <i class='bx bx-phone-call'></i>
+          <a href="tel:+51944491189" class="top-bar__link">Llamar: 944 491 189</a>
+        </div>
+        <div class="top-bar__item">
+          <i class='bx bxl-whatsapp'></i>
+          <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20solicitar%20una%20cotizaci%C3%B3n%20para%20enchapado%20y%20corte" class="top-bar__link" target="_blank" rel="noopener noreferrer">WhatsApp: 944 491 189</a>
+        </div>
+        <div class="top-bar__item">
+          <i class='bx bx-map-pin'></i>
+          <span>Av. Nicolás de Piérola 301, VMT (A pasos del Palacio de la Juventud)</span>
+        </div>
+        <div class="top-bar__item">
+          <i class='bx bx-envelope'></i>
+          <a href="mailto:nknkventas@gmail.com" class="top-bar__link">nknkventas@gmail.com</a>
+        </div>
+      </div>
+      <div class="top-bar__social">
+        <a href="https://facebook.com" class="top-bar__social-link" target="_blank" rel="noopener noreferrer nofollow" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+        <a href="https://instagram.com" class="top-bar__social-link" target="_blank" rel="noopener noreferrer nofollow" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+        <a href="https://tiktok.com" class="top-bar__social-link" target="_blank" rel="noopener noreferrer nofollow" aria-label="TikTok"><i class='bx bxl-tiktok'></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       2. BLOQUE: CABECERA Y NAVEGACIÓN (.header)
+       ======================================================================== -->
+  <header class="header">
+    <div class="container header__container">
+      <a href="#inicio" class="header__logo-wrap">
+        <img src="img/logo/logo.png" alt="NK PLACAS E.I.R.L. Logo" class="header__logo" width="220" height="52" fetchpriority="high" decoding="async">
+      </a>
+      
+      <nav class="header__nav">
+        <a href="#inicio" class="header__link header__link--active">Inicio</a>
+        <a href="#cortes-especiales" class="header__link">Cortes Especiales</a>
+        <a href="#taller" class="header__link">Taller</a>
+        <a href="#servicios" class="header__link">Servicios</a>
+        <a href="#marcas" class="header__link">Marcas</a>
+        <a href="#nosotros" class="header__link">Nosotros</a>
+        <a href="#contacto" class="header__link">Contacto</a>
+      </nav>
+      
+      <div class="header__actions">
+        <a href="tel:+51944491189" class="btn btn--outline header__btn-call" title="Llamar directamente al taller">
+          <i class='bx bx-phone-call'></i>
+          <span>Llamar</span>
+        </a>
+        <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20solicitar%20una%20cotizaci%C3%B3n" class="btn btn--primary header__btn" target="_blank" rel="noopener noreferrer">
+          <i class='bx bxl-whatsapp'></i>
+          <span>WhatsApp</span>
+        </a>
+        <button class="header__toggle" aria-label="Abrir Menú de Navegación">
+          <i class='bx bx-menu'></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       3. BLOQUE: HERO SLIDER (.hero-slider) — CÁLIDO, DIRECTO Y ACCESIBLE
+       ======================================================================== -->
+  <section class="hero-slider" id="inicio">
+    
+    <!-- Diapositiva 1: CORTES ESPECIALES Y MOLDURADOS -->
+    <div class="hero-slider__slide hero-slider__slide--active">
+      <div class="hero-slider__bg" style="background-image: url('img/hero/hero_cnc.jpg');"></div>
+      <div class="hero-slider__overlay"></div>
+      <div class="container">
+        <div class="hero-slider__content">
+          <span class="hero-slider__script">Tienda y Taller en Villa María del Triunfo</span>
+          <h1 class="hero-slider__title">
+            CORTES ESPECIALES, MOLDURADOS <span class="hero-slider__title-highlight">Y ENCHAPADO A TU MEDIDA</span>
+          </h1>
+          <p class="hero-slider__desc">
+            Precios accesibles y atención rápida para maestros carpinteros y público en general. Visítanos en nuestra tienda a pasos del Palacio de la Juventud o mándanos tu lista de medidas.
+          </p>
+          <div class="hero-slider__action">
+            <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20cotizar%20Cortes%20Especiales%20con%20mis%20medidas" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+              <i class='bx bxl-whatsapp'></i>
+              <span>Consultar por WhatsApp</span>
+            </a>
+            <a href="tel:+51944491189" class="btn btn--secondary btn--call">
+              <i class='bx bx-phone-call'></i>
+              <span>Llamar: 944 491 189</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Diapositiva 2: ENCHAPADO AL PASO Y CORTE -->
+    <div class="hero-slider__slide">
+      <div class="hero-slider__bg" style="background-image: url('img/hero/enchapadora_poster.jpg');"></div>
+      <div class="hero-slider__overlay"></div>
+      <div class="container">
+        <div class="hero-slider__content">
+          <span class="hero-slider__script">Servicio al Paso en Taller</span>
+          <h2 class="hero-slider__title">
+            ENCHAPADO DE CANTOS Y <span class="hero-slider__title-highlight">CORTE DIMENSIONADO</span>
+          </h2>
+          <p class="hero-slider__desc">
+            Pegamos tapacanto delgado y grueso con máquina industrial. Acabado suave y al ras, listo para armar tus muebles sin demoras.
+          </p>
+          <div class="hero-slider__action">
+            <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20cotizar%20servicio%20de%20enchapado%20y%20corte" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+              <i class='bx bxl-whatsapp'></i>
+              <span>Consultar Enchapado</span>
+            </a>
+            <a href="tel:+51944491189" class="btn btn--secondary btn--call">
+              <i class='bx bx-phone-call'></i>
+              <span>Llamar: 944 491 189</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Diapositiva 3: TABLEROS EN STOCK -->
+    <div class="hero-slider__slide">
+      <div class="hero-slider__bg" style="background-image: url('img/hero/hero_1.jpg');"></div>
+      <div class="hero-slider__overlay"></div>
+      <div class="container">
+        <div class="hero-slider__content">
+          <span class="hero-slider__script">Venta Directa en Local</span>
+          <h2 class="hero-slider__title">
+            TABLEROS DE MELAMINA <span class="hero-slider__title-highlight">EN STOCK</span>
+          </h2>
+          <p class="hero-slider__desc">
+            Pelíkano, Vesto, Masisa y más marcas para procesar tus cortes en el mismo taller y ahorrar tiempo.
+          </p>
+          <div class="hero-slider__action">
+            <a href="#marcas" class="btn btn--primary">
+              <i class='bx bx-grid-alt'></i>
+              <span>Ver Tableros en Stock</span>
+            </a>
+            <a href="tel:+51944491189" class="btn btn--secondary btn--call">
+              <i class='bx bx-phone-call'></i>
+              <span>Llamar: 944 491 189</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <button class="hero-slider__arrow hero-slider__arrow--prev" aria-label="Diapositiva Anterior"><i class='bx bx-chevron-left'></i></button>
+    <button class="hero-slider__arrow hero-slider__arrow--next" aria-label="Siguiente Diapositiva"><i class='bx bx-chevron-right'></i></button>
+    <div class="hero-slider__dots"></div>
+
+    <!-- Botón Interactivo: Desplazamiento Abajo -->
+    <button class="hero-slider__scroll-btn" id="heroScrollDown" aria-label="Desplazarse a cortes especiales">
+      <i class='bx bx-chevron-down hero-slider__scroll-icon'></i>
+    </button>
+  </section>
+
+  <!-- ========================================================================
+       3.1. BLOQUE: MUESTRARIO DE CORTES ESPECIALES (.special-cuts) — FOTOS REALES
+       ======================================================================== -->
+  <section class="special-cuts" id="cortes-especiales">
+    <div class="container">
+      <div class="section-header reveal--up">
+        <span class="section-header__tag">Cortes a Pedido en Taller</span>
+        <h2 class="section-header__title">MUESTRA DE LO QUE HACEMOS <span class="section-header__title--highlight">EN NUESTRO TALLER</span></h2>
+        <p class="section-header__desc">
+          Aquí te mostramos solo algunos ejemplos de cortes especiales y moldurados que realizamos. No nos limitamos a estos modelos: si tienes tu propio diseño, medida, dibujo o foto, te lo cortamos tal como lo necesitas.
+        </p>
+      </div>
+
+      <div class="special-cuts__grid">
+        
+        <!-- Muestra 1: Corte con Moldura en Arco -->
+        <article class="cut-card reveal--up reveal--delay-1">
+          <div class="cut-card__media">
+            <img src="img/cnc/cnc_puerta_moldurada_arco.jpg" alt="Corte y moldurado en arco sobre tablero en taller" class="cut-card__img" width="400" height="520" loading="lazy" decoding="async">
+            <span class="cut-card__badge">Muestra en Taller</span>
+          </div>
+          <div class="cut-card__body">
+            <h3 class="cut-card__title">Corte con Moldura en Arco</h3>
+            <p class="cut-card__desc">
+              Moldura curva clásica en bajo relieve sobre MDF. Ejemplo de mecanizado y acabado listo para lijar o pintar.
+            </p>
+            <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20consultar%20un%20corte%20con%20Moldura%20en%20Arco" target="_blank" rel="noopener noreferrer" class="btn btn--primary cut-card__btn">
+              <i class='bx bxl-whatsapp'></i>
+              <span>Consultar Corte Similar</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Muestra 2: Corte Recto Moldurado -->
+        <article class="cut-card reveal--up reveal--delay-2">
+          <div class="cut-card__media">
+            <img src="img/cnc/cnc_puerta_moldurada_recta.jpg" alt="Corte y perfilado recto moldurado sobre tablero en taller" class="cut-card__img" width="400" height="520" loading="lazy" decoding="async">
+            <span class="cut-card__badge">Muestra en Taller</span>
+          </div>
+          <div class="cut-card__body">
+            <h3 class="cut-card__title">Corte Recto Moldurado (Shaker)</h3>
+            <p class="cut-card__desc">
+              Líneas rectas y limpias en bajo relieve. Ejemplo moderno para frentes, marcos y módulos decorativos.
+            </p>
+            <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20consultar%20un%20corte%20Recto%20Moldurado" target="_blank" rel="noopener noreferrer" class="btn btn--primary cut-card__btn">
+              <i class='bx bxl-whatsapp'></i>
+              <span>Consultar Corte Similar</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Muestra 3: Placa Ranurada Decorativa -->
+        <article class="cut-card reveal--up reveal--delay-3">
+          <div class="cut-card__media">
+            <img src="img/cnc/cnc_ranurado_rejilla.jpg" alt="Tablero con ranurado decorativo lineal realizado en taller" class="cut-card__img" width="400" height="520" loading="lazy" decoding="async">
+            <span class="cut-card__badge">Muestra en Taller</span>
+          </div>
+          <div class="cut-card__body">
+            <h3 class="cut-card__title">Placa Ranurada Decorativa</h3>
+            <p class="cut-card__desc">
+              Ranuras paralelas continuas. Ejemplo de acabado para frentes de cajón, cómodas, cabeceras y revestimiento de paneles.
+            </p>
+            <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20consultar%20un%20corte%20de%20Placa%20Ranurada" target="_blank" rel="noopener noreferrer" class="btn btn--primary cut-card__btn">
+              <i class='bx bxl-whatsapp'></i>
+              <span>Consultar Corte Similar</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Banner de Trabajo a Medida con Dibujo o Foto -->
+      <div class="special-cuts__custom-banner reveal--up">
+        <div class="special-cuts__custom-info">
+          <i class='bx bx-edit-alt'></i>
+          <div>
+            <h4 class="special-cuts__custom-title">¿Tienes otro diseño, medida o foto diferente?</h4>
+            <p class="special-cuts__custom-desc">
+              Estas fotos son solo una muestra de lo que hacemos. Cortamos cualquier modelo que necesites. Tráenos tu croquis en papel o mándanos una foto al WhatsApp y te lo cotizamos al momento a precio de taller.
+            </p>
+          </div>
+        </div>
+        <div class="special-cuts__custom-actions">
+          <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20tengo%20un%20dise%C3%B1o%20y%20medidas%20para%20cotizar%20corte" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            <i class='bx bxl-whatsapp'></i>
+            <span>Mandar mi Dibujo por WhatsApp</span>
+          </a>
+          <a href="tel:+51944491189" class="btn btn--phone">
+            <i class='bx bx-phone-call'></i>
+            <span>Llamar al 944 491 189</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. BLOQUE: TALLER EN ACCIÓN Y MAQUINARIA REAL (.workshop)
+       ======================================================================== -->
+  <!-- ========================================================================
+       4. BLOQUE: TALLER Y ENCHAPADO AL PASO (.workshop)
+       ======================================================================== -->
+  <section class="workshop" id="taller">
+    <div class="container">
+      <div class="workshop__grid">
+        <!-- Columna Izquierda: Fotografía de Taller y Maquinaria Real -->
+        <div class="workshop__media-col reveal--left">
+          <div class="workshop__media-wrapper">
+            <img src="img/hero/enchapadora_poster.jpg" alt="Máquina enchapadora de cantos en taller NK PLACAS en Villa María del Triunfo" class="workshop__img" width="700" height="440" loading="lazy" decoding="async">
+            <span class="workshop__media-pill">
+              <i class='bx bx-check-circle'></i>
+              <span>Servicio en Taller</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Información Clara y Limpia -->
+        <div class="workshop__info-col reveal--right">
+          <span class="section-header__tag">Servicio al Paso en VMT</span>
+          <h2 class="workshop__heading">ENCHAPADO DE CANTOS <span class="workshop__heading-highlight">AL PASO Y A BUEN PRECIO</span></h2>
+          <p class="workshop__lead-text">
+            En <strong>NK PLACAS</strong> enchapamos tus piezas de melamina con máquina para que te queden firmes, con canto suave y listas para armar. Atención rápida para que no te demores con tus clientes.
+          </p>
+
+          <ul class="workshop__list">
+            <li class="workshop__item">
+              <i class='bx bx-check'></i>
+              <div>
+                <strong>Tapacanto delgado y grueso:</strong>
+                <span>Pegado térmico parejo y resistente, no se despega con el uso.</span>
+              </div>
+            </li>
+            <li class="workshop__item">
+              <i class='bx bx-check'></i>
+              <div>
+                <strong>Refilado suave al tacto:</strong>
+                <span>Bordes perfilados al ras, sin filos que corten ni asperezas.</span>
+              </div>
+            </li>
+            <li class="workshop__item">
+              <i class='bx bx-check'></i>
+              <div>
+                <strong>Precios justos para carpinteros:</strong>
+                <span>Tráenos tu lista de piezas y te cotizamos al instante en mostrador.</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="workshop__action">
+            <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20consultar%20precio%20de%20enchapado%20en%20taller" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+              <i class='bx bxl-whatsapp'></i>
+              <span>Consultar Precio por WhatsApp</span>
+            </a>
+            <a href="tel:+51944491189" class="btn btn--phone">
+              <i class='bx bx-phone-call'></i>
+              <span>Llamar al Taller</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. BLOQUE: SERVICIOS (.services Y .service-card)
+       ======================================================================== -->
+  <section class="services" id="servicios">
+    <div class="container">
+      
+      <div class="section-header reveal--up">
+        <span class="section-header__tag">Maquinaria y Servicios Especiales</span>
+        <h2 class="section-header__title">SERVICIOS DE CORTE CNC, <span class="section-header__title--highlight">ENCHAPADO Y MAQUILA</span></h2>
+        <p class="section-header__desc">
+          Mecanizado computarizado y acabados de alta precisión para carpinteros, instaladores y proyectos.
+        </p>
+      </div>
+
+      <div class="services__grid">
+        
+        <!-- Tarjeta 1: CORTE ESPECIAL CNC (SERVICIO ESTRELLA) -->
+        <article class="service-card service-card--featured reveal--up reveal--delay-1">
+          <span class="service-card__badge-star">SERVICIO ESPECIAL CNC</span>
+          <div class="service-card__media">
+            <img src="img/services/service_cnc.jpg" alt="Cortes especiales en melamina y MDF con máquina CNC" class="service-card__img" width="400" height="250" loading="lazy" decoding="async">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Cortes Especiales y Moldurados CNC</h3>
+            <p class="service-card__desc">
+              Cortes computarizados en melamina y MDF para puertas molduradas, ranurados decorativos y piezas a medida.
+            </p>
+            <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20cotizar%20el%20Servicio%20Estrella%20de%20Cortes%20Especiales%20en%20Melamina%20y%20MDF%20con%20m%C3%A1quina%20CNC" target="_blank" rel="noopener noreferrer" class="btn btn--primary service-card__btn">
+              <i class='bx bxl-whatsapp'></i>
+              <span>Cotizar Corte CNC</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 2: Enchapado de Cantos -->
+        <article class="service-card reveal--up reveal--delay-2">
+          <div class="service-card__media">
+            <img src="img/services/service_enchapado.jpg" alt="Enchapado de cantos con tapacanto delgado y grueso en máquina industrial" class="service-card__img" width="400" height="250" loading="lazy" decoding="async">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Enchapado de Cantos (Tapacanto)</h3>
+            <p class="service-card__desc">
+              Pegado de tapacanto delgado y grueso con máquina industrial para cantos limpios, firmes y bien acabados.
+            </p>
+            <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20cotizar%20servicio%20de%20Enchapado%20de%20Cantos" target="_blank" rel="noopener noreferrer" class="btn btn--primary service-card__btn">
+              <i class='bx bxl-whatsapp'></i>
+              <span>Cotizar Enchapado</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 3: Corte Lineal y Dimensionado -->
+        <article class="service-card reveal--up reveal--delay-3">
+          <div class="service-card__media">
+            <img src="img/services/service_corte.jpg" alt="Servicio de corte dimensionado de tableros de melamina" class="service-card__img" width="400" height="250" loading="lazy" decoding="async">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Corte Lineal y Dimensionado</h3>
+            <p class="service-card__desc">
+              Corte y dimensionado de tableros en escuadra limpia, listo para armado directo de tus proyectos.
+            </p>
+            <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20cotizar%20Corte%20Lineal%20y%20Dimensionado" target="_blank" rel="noopener noreferrer" class="btn btn--primary service-card__btn">
+              <i class='bx bxl-whatsapp'></i>
+              <span>Cotizar Corte</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 4: Ranurado y Perforación Bisagras -->
+        <article class="service-card reveal--up reveal--delay-4">
+          <div class="service-card__media">
+            <img src="img/services/service_ranurado.jpg" alt="Ranurado de melamina para fondos de muebles y cajones" class="service-card__img" width="400" height="250" loading="lazy" decoding="async">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Ranurado y Perforación para Bisagras</h3>
+            <p class="service-card__desc">
+              Servicio de ranurado para fondos de cajones y perforaciones para instalación de bisagras de muebles.
+            </p>
+            <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20cotizar%20Ranurado%20y%20Perforaciones" target="_blank" rel="noopener noreferrer" class="btn btn--primary service-card__btn">
+              <i class='bx bxl-whatsapp'></i>
+              <span>Cotizar Ranurado</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 5: Optimización de Despiece -->
+        <article class="service-card reveal--up reveal--delay-5">
+          <div class="service-card__media">
+            <img src="img/services/service_optimizacion.jpg" alt="Optimización computarizada de tableros de melamina" class="service-card__img" width="400" height="250" loading="lazy" decoding="async">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Optimización de Despiece</h3>
+            <p class="service-card__desc">
+              Planificación de cortes para aprovechar al máximo cada tablero de melamina y reducir desperdicios.
+            </p>
+            <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20optimizar%20mi%20lista%20de%20cortes%20de%20melamina" target="_blank" rel="noopener noreferrer" class="btn btn--primary service-card__btn">
+              <i class='bx bxl-whatsapp'></i>
+              <span>Optimizar Despiece</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 6: Suministro de Tableros (Opcional) -->
+        <article class="service-card reveal--up reveal--delay-6">
+          <div class="service-card__media">
+            <img src="img/services/service_tableros.jpg" alt="Venta de tableros de melamina Pelíkano, Vesto, Masisa y más" class="service-card__img" width="400" height="250" loading="lazy" decoding="async">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Suministro de Tableros (Opcional)</h3>
+            <p class="service-card__desc">
+              Disponibilidad de tableros Pelíkano, Vesto, Masisa, Amazónico, Duratex y Duraplac para procesar directamente tu proyecto.
+            </p>
+            <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20consultar%20disponibilidad%20de%20tableros%20de%20melamina" target="_blank" rel="noopener noreferrer" class="btn btn--primary service-card__btn">
+              <i class='bx bxl-whatsapp'></i>
+              <span>Consultar Placas</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. BLOQUE: MARCAS QUE COMERCIALIZAMOS (.brands) — TABLEROS Y DISTRIBUCIÓN
+       ======================================================================== -->
+  <section class="brands" id="marcas">
+    <div class="container">
+      <div class="section-header reveal--up">
+        <span class="section-header__tag">Tableros y Melamina</span>
+        <h2 class="section-header__title">MARCAS QUE <span class="section-header__title--highlight">TRABAJAMOS</span></h2>
+        <p class="section-header__desc">
+          Disponibilidad de tableros de las principales marcas, listos para corte CNC, dimensionado y enchapado en taller.
+        </p>
+      </div>
+
+      <div class="brands__grid reveal--up reveal--delay-1">
+        
+        <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20consultar%20tableros%20Pelikano" target="_blank" rel="noopener noreferrer" class="brand-card" title="Consultar melamina Pelíkano">
+          <div class="brand-card__logo-wrapper">
+            <img src="img/brands/pelikano.webp" alt="Melamina Pelíkano" class="brand-card__logo" width="180" height="52" loading="lazy" decoding="async">
+          </div>
+          <span class="brand-card__badge">Tableros de Diseño</span>
+        </a>
+
+        <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20consultar%20tableros%20Vesto" target="_blank" rel="noopener noreferrer" class="brand-card" title="Consultar melamina Vesto">
+          <div class="brand-card__logo-wrapper">
+            <img src="img/brands/vesto.jpg" alt="Melamina Vesto Arauco" class="brand-card__logo" width="180" height="52" loading="lazy" decoding="async">
+          </div>
+          <span class="brand-card__badge">By Arauco</span>
+        </a>
+
+        <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20consultar%20tableros%20Masisa" target="_blank" rel="noopener noreferrer" class="brand-card" title="Consultar melamina Masisa">
+          <div class="brand-card__logo-wrapper">
+            <img src="img/brands/masisa.webp" alt="Tableros Masisa" class="brand-card__logo" width="180" height="52" loading="lazy" decoding="async">
+          </div>
+          <span class="brand-card__badge">Inspiración y Diseño</span>
+        </a>
+
+        <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20consultar%20tableros%20Duratex" target="_blank" rel="noopener noreferrer" class="brand-card" title="Consultar melamina Duratex">
+          <div class="brand-card__logo-wrapper">
+            <img src="img/brands/duratex.png" alt="Melamina Duratex" class="brand-card__logo" width="180" height="52" loading="lazy" decoding="async">
+          </div>
+          <span class="brand-card__badge">Alta Resistencia</span>
+        </a>
+
+        <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20consultar%20tableros%20Duraplac" target="_blank" rel="noopener noreferrer" class="brand-card" title="Consultar tableros Duraplac">
+          <div class="brand-card__logo-wrapper">
+            <img src="img/brands/duraplac.png" alt="Tableros Duraplac" class="brand-card__logo" width="180" height="52" loading="lazy" decoding="async">
+          </div>
+          <span class="brand-card__badge">Aglomerados de Calidad</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. BLOQUE: TIENDA, LOCAL COMERCIAL Y MAPA (.about)
+       ======================================================================== -->
+  <section class="about" id="nosotros">
+    <div class="container">
+      <div class="about__grid">
+        
+        <div class="about__content reveal--left">
+          <span class="section-header__tag">Tienda y Local de Atención</span>
+          <h2 class="about__title">VISÍTANOS EN NUESTRO <span class="about__title-highlight">LOCAL DE VMT</span></h2>
+          <p class="about__lead">
+            En NK PLACAS te esperamos directamente en nuestra tienda y taller en Villa María del Triunfo para atender tus pedidos al momento.
+          </p>
+          <p class="about__body">
+            Acércate con tu lista de piezas o medidas en un papel. Aquí puedes ver tableros de melamina, encargar puertas molduradas, ranurados decorativos y enchapado de tapacanto con atención directa en mostrador.
+          </p>
+
+          <div class="about__info-list">
+            <div class="about__info-item">
+              <i class='bx bx-map-pin'></i>
+              <div>
+                <strong>Dirección:</strong> Av. Nicolás de Piérola Nro. 301, Urb. El Cercado, Villa María del Triunfo
+                <span class="about__info-ref"><i class='bx bx-navigation'></i> Referencia: A pasos del Palacio de la Juventud de VMT (esq. Av. Salvador Allende / Pista Nueva)</span>
+              </div>
+            </div>
+            <div class="about__info-item">
+              <i class='bx bx-time'></i>
+              <div>
+                <strong>Horario de Atención:</strong> Lunes a Sábado: 8:00 am – 6:00 pm
+              </div>
+            </div>
+            <div class="about__info-item">
+              <i class='bx bxl-whatsapp'></i>
+              <div>
+                <strong>WhatsApp / Pedidos:</strong> 944 491 189
+              </div>
+            </div>
+            <div class="about__info-item">
+              <i class='bx bx-phone'></i>
+              <div>
+                <strong>Llamadas Directas:</strong> <a href="tel:+51944491189" style="color: var(--color-primary-red); font-weight: 700;">944 491 189</a> (Tocar para llamar)
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="about__media reveal--right">
+          <div class="about__map-wrapper">
+            <!-- Iframe de Google Maps listo para actualizar con enlace exacto -->
+            <iframe 
+              src="https://maps.google.com/maps?q=Av.+Nicol%C3%A1s+de+Pi%C3%A9rola+301,+Villa+Mar%C3%ADa+del+Triunfo,+Lima&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+              class="about__map-iframe" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade" 
+              title="Ubicación de tienda y taller NK PLACAS a pasos del Palacio de la Juventud en VMT">
+            </iframe>
+
+            <div class="about__map-badge">
+              <div class="about__map-badge-info">
+                <i class='bx bx-store-alt'></i>
+                <div>
+                  <strong class="about__map-badge-title">Tienda y Taller NK PLACAS</strong>
+                  <span class="about__map-badge-sub">Av. Nicolás de Piérola 301 (A pasos del Palacio de la Juventud)</span>
+                </div>
+              </div>
+              <a href="https://maps.google.com/?q=Av.+Nicol%C3%A1s+de+Pi%C3%A9rola+301,+Villa+Mar%C3%ADa+del+Triunfo,+Lima" target="_blank" rel="noopener noreferrer" class="btn btn--white about__map-btn">
+                <span>Abrir Mapa</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. BLOQUE: BANDA PRE-FOOTER (.pre-footer)
+       ======================================================================== -->
+  <section class="pre-footer reveal--up">
+    <div class="container">
+      <div class="pre-footer__wrap">
+        <h3 class="pre-footer__title">¿TIENES MEDIDAS O UN MUEBLE EN MENTE? TE AYUDAMOS EN EL TALLER</h3>
+        <div class="pre-footer__actions">
+          <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20tengo%20un%20proyecto%20y%20deseo%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer" class="btn pre-footer__btn">
+            <i class='bx bxl-whatsapp'></i>
+            <span>Escribir por WhatsApp</span>
+          </a>
+          <a href="tel:+51944491189" class="btn btn--phone pre-footer__btn-phone">
+            <i class='bx bx-phone-call'></i>
+            <span>Llamar al 944 491 189</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. BLOQUE: PIE DE PÁGINA (.footer)
+       ======================================================================== -->
+  <footer class="footer" id="contacto">
+    <div class="container">
+      
+      <div class="footer__top reveal--up">
+        
+        <!-- Columna 1: Marca y Datos Fiscales -->
+        <div class="footer__brand">
+          <img src="img/logo/logo.png" alt="NK PLACAS E.I.R.L." class="footer__logo" width="200" height="52" loading="lazy" decoding="async">
+          <p class="footer__desc">
+            Taller especializado en servicio de enchapado de tapacanto (canteado) y corte dimensionado de tableros de melamina con maquinaria industrial para carpinteros y proyectos en Lima.
+          </p>
+          <div class="footer__fiscal">
+            <strong>Razón Social: NK PLACAS E.I.R.L.</strong>
+            <span>RUC: 20616192141</span><br>
+            <span>Estado: ACTIVO / Condición: HABIDO</span>
+          </div>
+        </div>
+
+        <!-- Columna 2: Enlaces de Navegación -->
+        <div class="footer__col">
+          <h4 class="footer__title">Explorar</h4>
+          <ul class="footer__links">
+            <li><a href="#inicio" class="footer__link"><i class='bx bx-chevron-right'></i> Inicio</a></li>
+            <li><a href="#cortes-especiales" class="footer__link"><i class='bx bx-chevron-right'></i> Cortes Especiales CNC</a></li>
+            <li><a href="#taller" class="footer__link"><i class='bx bx-chevron-right'></i> Taller y Maquinaria</a></li>
+            <li><a href="#servicios" class="footer__link"><i class='bx bx-chevron-right'></i> Servicios</a></li>
+            <li><a href="#marcas" class="footer__link"><i class='bx bx-chevron-right'></i> Marcas Oficiales</a></li>
+            <li><a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20solicitar%20una%20cotizaci%C3%B3n" class="footer__link" target="_blank" rel="noopener noreferrer"><i class='bx bx-chevron-right'></i> Cotizar por WhatsApp</a></li>
+            <li><a href="#nosotros" class="footer__link"><i class='bx bx-chevron-right'></i> Quiénes Somos</a></li>
+            <li><a href="libro_de_reclamaciones.html" class="footer__link"><i class='bx bx-chevron-right'></i> Libro de Reclamaciones</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Servicios -->
+        <div class="footer__col">
+          <h4 class="footer__title">Servicios</h4>
+          <ul class="footer__links">
+            <li><a href="#servicios" class="footer__link"><i class='bx bx-chevron-right'></i> Cortes Especiales CNC</a></li>
+            <li><a href="#servicios" class="footer__link"><i class='bx bx-chevron-right'></i> Enchapado de Canto (Tapacanto)</a></li>
+            <li><a href="#servicios" class="footer__link"><i class='bx bx-chevron-right'></i> Corte Lineal en Escuadra</a></li>
+            <li><a href="#servicios" class="footer__link"><i class='bx bx-chevron-right'></i> Ranurado de Fondos</a></li>
+            <li><a href="#servicios" class="footer__link"><i class='bx bx-chevron-right'></i> Perforación para Bisagras</a></li>
+            <li><a href="#servicios" class="footer__link"><i class='bx bx-chevron-right'></i> Optimización de Despiece</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Contacto y Libro de Reclamaciones -->
+        <div class="footer__col">
+          <h4 class="footer__title">Contacto</h4>
+          <ul class="footer__contacts">
+            <li>
+              <i class='bx bx-map-pin'></i>
+              <span>Av. Nicolás de Piérola Nro. 301, Urb. El Cercado (A pasos del Palacio de la Juventud), Villa María del Triunfo, Lima - Perú</span>
+            </li>
+            <li>
+              <i class='bx bx-phone'></i>
+              <a href="tel:+51944491189">944 491 189</a>
+            </li>
+            <li>
+              <i class='bx bxl-whatsapp'></i>
+              <a href="https://wa.me/51944491189" target="_blank" rel="noopener noreferrer">WhatsApp: 944 491 189</a>
+            </li>
+            <li>
+              <i class='bx bx-envelope'></i>
+              <a href="mailto:nknkventas@gmail.com">nknkventas@gmail.com</a>
+            </li>
+            <li>
+              <i class='bx bx-time'></i>
+              <span>Lunes a Sábado: 8:00 am - 6:00 pm</span>
+            </li>
+          </ul>
+
+          <!-- Botón de Libro de Reclamaciones Oficial INDECOPI -->
+          <div class="footer__badge-wrap">
+            <a href="libro_de_reclamaciones.html" class="footer__badge-link" title="Libro de Reclamaciones Virtual conforme a INDECOPI">
+              <img src="img/badges/libro_reclamaciones.jpg" alt="Libro de Reclamaciones - NK PLACAS EIRL" class="footer__badge-img" width="130" height="184" loading="lazy" decoding="async">
+            </a>
+            <span class="footer__badge-note">Conforme a la Ley N° 29571 / INDECOPI</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra de Copyright Inferior -->
+      <div class="footer__bottom">
+        <div class="footer__bottom-container">
+          <p class="footer__copyright">© 2026 NK PLACAS E.I.R.L. — RUC 20616192141. Todos los derechos reservados.</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       10. BLOQUE: BOTÓN FLOTANTE DE WHATSAPP (.whatsapp-btn)
+       ======================================================================== -->
+  <a href="https://wa.me/51944491189?text=Hola%20NK%20PLACAS,%20deseo%20cotizar%20servicio%20de%20enchapado%20de%20tapacanto%20y%20corte%20de%20melamina." 
+     class="whatsapp-btn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Contactar por WhatsApp">
+    <i class='bx bxl-whatsapp'></i>
+    <span class="whatsapp-btn__tooltip">¡Cotiza tu enchapado y corte aquí!</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

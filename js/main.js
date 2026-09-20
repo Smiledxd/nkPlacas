@@ -186,38 +186,6 @@ document.addEventListener('DOMContentLoaded', () => {
   startSlideTimer();
 
   // =========================================================================
-  // 3.1 BOTÓN INTERACTIVO DE SCROLL DEL HERO (Flecha hacia abajo)
-  // =========================================================================
-  const heroScrollBtn = document.getElementById('heroScrollDown');
-  if (heroScrollBtn) {
-    heroScrollBtn.addEventListener('click', () => {
-      const targetSection = document.getElementById('cortes-especiales') || document.getElementById('taller') || document.getElementById('servicios') || document.querySelector('.services');
-      if (targetSection) {
-        const headerEl = document.querySelector('.header');
-        const headerHeight = headerEl ? headerEl.offsetHeight : 70;
-        const targetPos = targetSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-        window.scrollTo({
-          top: targetPos,
-          behavior: 'smooth'
-        });
-      }
-    });
-
-    // Ocultar suavemente al hacer scroll hacia abajo y reaparecer al volver al hero
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 220) {
-        heroScrollBtn.style.opacity = '0';
-        heroScrollBtn.style.pointerEvents = 'none';
-        heroScrollBtn.style.transform = 'translateX(-50%) translateY(10px)';
-      } else {
-        heroScrollBtn.style.opacity = '1';
-        heroScrollBtn.style.pointerEvents = 'auto';
-        heroScrollBtn.style.transform = 'translateX(-50%) translateY(0)';
-      }
-    }, { passive: true });
-  }
-
-  // =========================================================================
   // 4. DESPLAZAMIENTO SUAVE PARA ENLACES INTERNOS
   // =========================================================================
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {

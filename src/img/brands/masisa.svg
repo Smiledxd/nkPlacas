@@ -1,9 +1,0 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" fill="none">
-  <g transform="translate(14, 10)">
-    <rect x="0" y="6" width="30" height="30" rx="5" fill="#DC2626"/>
-    <path d="M6 28 L6 14 L11 21 L16 14 L16 28 L13.5 28 L13.5 18 L11 22 L11 22 L8.5 18 L8.5 28 Z" fill="#FFFFFF"/>
-    <path d="M19 21 L24 21 M19 17 L24 17 M19 25 L24 25" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
-    <text x="38" y="30" font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="25" fill="#18181B" letter-spacing="2">MASISA</text>
-    <text x="40" y="42" font-family="'Montserrat', sans-serif" font-weight="700" font-size="8.5" fill="#DC2626" letter-spacing="3">INSPIRACIÓN MODULAR</text>
-  </g>
-</svg>

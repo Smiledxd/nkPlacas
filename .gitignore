@@ -1,0 +1,34 @@
+# Dependencias
+node_modules/
+.pnpm/
+.pnpm-store/
+
+# Caché y logs
+.cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Entorno y variables
+.env
+.env.local
+.env.*.local
+
+# Salidas de compilación / build
+dist/
+build/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDEs y editores
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

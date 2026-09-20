@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let currentSlide = 0;
   let slideInterval = null;
-  const SLIDE_DURATION = 6000;
+  const SLIDE_DURATION = 7000;
 
   if (slides.length > 0 && dotsContainer) {
     dotsContainer.innerHTML = '';
